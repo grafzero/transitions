@@ -3,6 +3,28 @@
     height: 150px;
     background-color: antiquewhite;
     margin-bottom: 30px;
+/*    margin-left: 50%;*/
+    animation-name: boxes;
+    animation-duration: 2s;
+}
+
+
+/*
+@keyframes boxes{
+     0%   {margin-left: 0;}
+
+    100% {margin-left: auto, margin-right: auto;
+    }
+}
+*/
+
+@keyframes boxes {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 #box1 {
@@ -18,6 +40,7 @@
 #box3 {
     transition: width, height;
     transition-duration: 3s;
+    transition-timing-function: ease-in;
 }
 
 #box1:hover {
@@ -32,3 +55,4 @@
     height: 300px;
     width: 300px;
 }
+
